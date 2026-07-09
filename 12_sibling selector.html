@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sibling selector</title>
+    <style>
+        h1+p {
+            color: blue;
+            font-size: 60px;
+        }
+        h2~p {
+            color: red;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>h1</h1>
+    <p>p</p>
+    <p>p</p>
+    <h2>h2</h2>
+    <p>p</p>
+    <p>p</p>
+</body>
+</html>

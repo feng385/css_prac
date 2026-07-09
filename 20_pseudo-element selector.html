@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* choose the first letter of the text in the div and change its color and font size */
+        div::first-letter {
+            color: red;
+            font-size: 60px;
+        }
+
+        div::first-line {
+            color: blue;
+            font-size: 30px;
+        }
+        /* change the color and background color of the text when it is selected */
+        div::selection {
+            color: white;
+            background-color: black;
+        }
+
+        /* choose the placeholder text in the input and change its color and font size */ */
+        input::placeholder {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* add a dollar sign before the text in the p tag and add USD after the text 
+        in the p tag, and change their color */
+        p::before {
+            content: "$";
+            color: red;
+        }
+        p::after {
+            content: " USD";
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>lorem ipsum dolor sit amet</div>
+    <br><br>
+    <input type="text" placeholder="please enter">
+    <p>99</p>
+    <p>99</p>
+    <p>99</p>
+    <p>99</p>
+    <p>99</p>
+    <p>99</p>
+</body>
+</html>

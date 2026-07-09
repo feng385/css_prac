@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selector</title>
+    <style>
+        /* the one that has the attribute title will be selected and styled. 
+        In this case, both divs with title="a" and title="b" will be red. 
+        The div without a title attribute will not be styled. */
+        [title] {
+            color: red;
+            font-size: 60px;
+        }
+
+        /* the following selector will select only the div with title="a" 
+        and style it blue. */
+        /* [title="a"] {
+            color: blue;
+            font-size: 60px;
+        } */
+
+        /* the following selector will select only the div with title that 
+        starts with "a" and style it blue. */
+         /* [title^="a"] {
+            color: blue;
+            font-size: 60px;
+         } */
+
+        /* the following selector will select only the div with title that 
+        ends with "c" and style it blue. */
+        /* [title$="c"] {
+            color: blue;
+            font-size: 60px; */
+
+        /* the following selector will select only the div with title that 
+        contains "d" and style it blue. */
+        /* [title*="d"] {
+            color: blue;
+            font-size: 60px;
+        } */
+
+    </style>
+
+
+</head>
+<body>
+    <div title="adc">red</div>
+    <div title="bdc">red</div>
+    <div>none</div>
+</body>
+</html>

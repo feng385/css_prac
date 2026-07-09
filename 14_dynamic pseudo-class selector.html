@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo-Class Selector</title>
+    <style>
+        /* Before clicking the link */
+        a:link {
+            color: red;
+            font-size: 60px;
+        }
+
+        /* After clicking the link */
+        a:visited {
+            color: blue;
+            font-size: 40px;         
+        }
+
+        /* When hovering over the link */
+        a:hover {
+            color: green;
+            font-size: 30px;
+        }
+
+        /* When the link is active (being clicked) */
+        a:active {
+            color: yellow;
+            font-size: 20px;
+        }
+        /* When the input field is focused */
+        input:focus {
+            color: red;
+            font-size: 60px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="http://www.baidu.com">baidu</a>
+    <a href="http://www.google.com">google</a>
+    <br><br>
+    <input type="text">
+</body>
+</html>

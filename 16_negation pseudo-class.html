@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* exclude elements with the class "fail" */
+        div>p:not(.fail) {
+            color: red;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>98</p>
+        <p>80</p>
+        <p>77</p>
+        <p>72</p>
+        <p>65</p>
+        <p>64</p>
+        <p class="fail">45</p>
+        <p class="fail">43</p>
+    </div>
+</body>
+</html>

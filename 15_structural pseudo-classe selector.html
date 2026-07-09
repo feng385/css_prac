@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* choose the firstchild and last child of the parent element */
+        div>p:first-child {
+            color: red;
+            font-size: 60px;
+        }
+        div>p:last-child {
+            color: blue;
+            font-size: 60px;
+        }
+        /* choose the special child of the parent element */
+        div>p:nth-child(-n+2) {
+            color: green;
+            font-size: 60px;
+        }
+
+        /* choose the first element of its type within the parent element */
+        div>p:first-of-type {
+            color: yellow;
+            font-size: 60px;
+        }
+        
+        /* choose the special element of its type within the parent element */
+        div>p:nth-of-type(2) {
+            color: orange;
+            font-size: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <span>64</span>
+        <p>32</p>
+        <p>24</p>
+        <p>16</p>
+        <p>12</p>
+        <p>8</p>
+        <p>4</p>
+
+    </div>
+</body>
+</html>
